@@ -20,12 +20,11 @@
 本仓库内全部的 原理图、PCB、外壳，适用于 CERN-OHL-S v2 或任何之后的版本  
 其中，霍尔开关和无线充电的部分设计有参考 [jeansimonet/Pixels](https://github.com/jeansimonet/Pixels) 项目，该项目基于 MIT 协议开源  
   
-dice/src 下包含的软件中：
- - lis2dw12 驱动来自 [STMicroelectronics/lis2dw12-pid](https://github.com/STMicroelectronics/lis2dw12-pid)，这部分为 BSD 3-Clause 协议
- - 代码主体修改自 [CH573EVT](https://www.wch.cn/downloads/CH573EVT_ZIP.html) 的 BLE_UART 示例，这部分基于 Apache-2.0 协议开源  
- - 其他我自己写的部分基于 GPL v3 开源（反正加一起也没写几行还写得那么烂不会真的有人想在这上面改吧x   
-
-esp32_dice_scanner 修改于 [espressif/arduino-esp32](https://github.com/espressif/arduino-esp32) 中提供的 BLE_Beacon_Scanner 示例，这部分基于 LGPL-2.1 开源  
+dice/src 下包含的软件中，我自己写的部分基于 GPL v3 开源（反正加一起也没写几行还写得那么烂不会真的有人想在这上面改吧x   
+其他需要作出声明的包括：
+ - lis2dw12 驱动来自 [STMicroelectronics/lis2dw12-pid](https://github.com/STMicroelectronics/lis2dw12-pid)，原代码基于 BSD 3-Clause 协议开源
+ - 代码主体修改自 [CH573EVT](https://www.wch.cn/downloads/CH573EVT_ZIP.html) 的 BLE_UART 示例，原代码基于 Apache-2.0 协议开源  
+ - esp32_dice_scanner 修改于 [espressif/arduino-esp32](https://github.com/espressif/arduino-esp32) 中提供的 BLE_Beacon_Scanner 示例，由于基于 LGPL-2.1 开源，这部分就跟着用相同的   
 
 作者不对 dice/panel 目录下带有元素图标的面板打印文件声明任何协议，作者也没有把这个文件商用，总之就是先放这    
 其中图纸来自 [B站 @芒果小强DY：教你如何实现元素骰子自由](https://www.bilibili.com/video/BV1S14y1K7hi)，但其中的美术素材（元素 Logo）版权归属于自由的 mhy  
