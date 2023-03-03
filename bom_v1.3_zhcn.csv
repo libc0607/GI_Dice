@@ -1,0 +1,74 @@
+,,,,,
+,,部件,规格,数量,备注
+"骰子本体
+电路部分",PCB,GI_Dice_V1.3_Rel,,1,JLC白嫖，https://oshwhub.com/libc0607/gi_dice_v1-3_rel 
+,"元件
+建议SMT",100nF,C0402,6,
+,,2.2uF,C0402,4,
+,,10nF,C0402,2,
+,,1uF,C0402,2,耐压25V或以上
+,,10uF,C0402,2,
+,,100kΩ,R0402,2,
+,,1MΩ,R0402,2,
+,,1kΩ,R0402,1,
+,,3.3kΩ,R0402,1,
+,,LIS2DW12TR,LGA-12_L2.0-W2.0-P0.50-BL,1,
+,,LGS4056H,DFN-8_L2.0-W2.0-P0.50-BL-EP-1,1,有 4.2V 和 4.35V 版本，根据你的电池选择，通常选 4.2V
+,,CM1124-EAC,DFN-4_L1.0-W1.0-P0.65-BL-EP-A,1,有 4.2V 和 4.35V 版本，根据你的电池选择，通常选 4.2V
+,"元件 
+可以手焊",CA-C01 2.4G天线,,1,https://item.taobao.com/item.htm?id=627328734225 
+,,2.2nF,C0402,1,要 NP0/C0G 材质，耐压25V或以上，如 https://item.szlcsc.com/3443038.html
+,,BAV99S,SOT-363_L2.1-W1.3-P0.65-LS2.3-BL,1,
+,,22uH,IND-SMD_L2.0-W1.6_NR201610,1,具体参考 CH573 手册，我实际用了个 10uH 0.4A 0603 功率电感 https://detail.tmall.com/item.htm?id=614042556481 
+,,APA102-2020,APA102-2020,8,https://item.taobao.com/item.htm?id=593679077814 
+,,TJ-S1615SW6TGLCRG-A5,LED-ARRAY-SMD_4P-L1.6-W1.5-TR-RD_TJ-S1615SW6TGLCRB-A5,1,例如优信 https://item.taobao.com/item.htm?id=522572822666
+,,CJE3139K,SC-75-3_L1.6-W0.8-P1.00-LS1.7-BR,1,
+,,CH573F,QFN-28_L4.0-W4.0-P0.40-BL-EP2.8,1,
+,,SGM2036-3.3YC5G/TR,SC-70-5_L2.1-W1.3-P0.65-LS2.1-BR,1,
+,,8P FPC 排线,8P 0.8MM间距 30MM长,1,https://item.taobao.com/item.htm?id=639292801110 
+,,3P FPC 排线,3P 1.0MM间距 30MM长 ,1,https://item.taobao.com/item.htm?id=639292801110 
+,,74LVC1G00DCKR,SC-70-5_L2.0-W1.3-P0.65-LS2.1-BR,1,
+,,HT7150S,SOT-23-3_L2.9-W1.5-P1.90-LS2.8-BR-CW,1,可换，但注意输入耐压要高于25V
+,,32MHz,CRYSTAL-SMD_4P-L2.0-W1.6-BL-2,1,
+,,32.768k,CRYSTAL-SMD_L2.1-W1.2-P1.50,0,仅预留，不用焊
+,,CC6203ST? ,SOT-23-3,1,也可换其他相似型号，https://item.szlcsc.com/271303.html 
+,,10uH 电感,CD53,2,磁路必须不能闭合，买最便宜的就对了；必须CD53，厚了塞不进去
+,,飞线,,若干,可以买那种耳机用的线材，细一些
+,,LIR1240 锂电池,Φ 12mm*4mm,1,淘宝很好买，如果担心盖不上，换薄一些的 301012 电池
+"骰子
+结构组装",,青稞纸,不要太厚的,若干,自己剪
+,,隔磁片,不要太厚的,若干,建议在给充电器买 XKT-511 时顺便一起买了
+,,双面胶,不要太厚的,若干,
+,,10号订书钉,,4,用于固定上下壳
+,,元素图标面板,透明亚克力/正面/0.8mm/常规遮光,8种元素，一套共8片,立创面板打印 https://github.com/libc0607/GI_Dice/blob/main/dice/panel/Panel_GI_Dice_Panel_Demo_2023-01-03.epanm 
+,,外壳,光固化3D打印,2, https://github.com/libc0607/GI_Dice/blob/main/dice/stl/dice_main_v1.3.STL 
+,,金色喷漆,,,我用的三和35#，你可以选择更好的
+,,光油,,,我用的三和190#，你可以选择更好的
+,,磁铁,Φ2mm * 1.5mm ,4（可选）,用作上下壳间的定位柱，可选
+,,砂纸,,若干,
+"充电器
+电路部分",,GI_Dice_Charger_V1.0_Rel,,1,可白嫖，https://oshwhub.com/libc0607/gi_dice_charger_dual_nobat_v1_0_rel 
+,,10KΩ(1002),R0603,1,热敏电阻，B3380
+,,5.1K,R0603,9,
+,,CC6201TO,TO-92S_3P-L4.1-W1.6-P1.27-L,1,https://item.szlcsc.com/271302.html 
+,,10nF,C0603,2,要 NP0/C0G 材质，耐压不能太低，如 https://item.szlcsc.com/87149.html 
+,,100nF,C0603,4,
+,,22uF,C0805,2,
+,,Red,LED0603-R-RD,1,
+,,Green,LED0603-R-RD,1,
+,,200kΩ,R0603,2,
+,,11kΩ,R0603,2,
+,,1MΩ,R0603,4,
+,,100mΩ,R0805,2,
+,,XKT-511,XKT-511,2,https://item.taobao.com/item.htm?id=620604429073 
+,,CH552G,SOP-16_L10.0-W3.9-P1.27-LS6.0-BL,1,
+,,SGM8522XS/TR,SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL,1,注意静电
+,,TYPE-C-31-M-12,USB-C_SMD-TYPE-C-31-M-12,1,
+"充电器
+外壳",,外壳-本体,光固化3D打印,1,https://github.com/libc0607/GI_Dice/blob/main/charger/stl/dualchrg-v1.0.STL
+,,外壳-底盖,光固化3D打印,1,https://github.com/libc0607/GI_Dice/blob/main/charger/stl/dualchrg-bottom_v1.0.STL 
+,,外壳-顶盖,光固化3D打印,1,https://github.com/libc0607/GI_Dice/blob/main/charger/stl/dualchrg-cap_v1.2.STL 
+,,磁铁,Φ6mm * 0.5mm ,8,上下盖子磁吸用
+,,磁铁,Φ8mm * 1.0mm ,2,关断骰子电源用
+,,磁铁,Φ2mm * 1.5mm ,1,给合盖霍尔传感器用；上述所有磁铁可在同一店买到（*lalaci）
+,,砂纸,,若干,
